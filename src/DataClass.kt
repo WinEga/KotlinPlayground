@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
             Person("Ega", age = 29))
 
     val oldest = persons.maxBy { it.age ?: 0 }
-    val younger = persons.minBy { it.age?:0 }
+    val younger = persons.minBy { it.age ?: 0 }
     println("The oldest is: $oldest")
     println("The younger is: $younger")
 }
